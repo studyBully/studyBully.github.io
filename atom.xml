@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-19T18:34:45.386Z</updated>
+  <updated>2016-03-19T18:44:16.969Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,22 +19,23 @@
     <title></title>
     <link href="http://yoursite.com/2016/03/20/firstArticle/"/>
     <id>http://yoursite.com/2016/03/20/firstArticle/</id>
-    <published>2016-03-19T18:34:10.928Z</published>
-    <updated>2016-03-19T18:34:45.386Z</updated>
+    <published>2016-03-19T18:44:09.177Z</published>
+    <updated>2016-03-19T18:44:16.969Z</updated>
     
-    <content type="html">&lt;p&gt;#���ڴ���ҵĲ����ˡ�&lt;/p&gt;
+    <content type="html">&lt;p&gt;#终于搭建好我的博客了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ƽ���¼�����С����,�ȷ���һƪ���¼�¼һ�¡����ǲ�����,�������������������ˣ��ͱ��ĵط����ˡ����������ڴ���ˡ�&lt;/p&gt;
+&lt;p&gt;平复下激动的小心情,先发表一篇文章记录一下。真是不容易,当初环境不是这里错了，就别的地方错了。如今是终于搭建好了。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;hexo����ɺ��ĸ���:&lt;br&gt;  ��д�����˯�� ����&lt;/p&gt;
+&lt;p&gt;hexo搭建完成后的感受:&lt;br&gt;  先写到这里。睡觉 哈哈&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;#���ڴ���ҵĲ����ˡ�&lt;/p&gt;
+      &lt;p&gt;#终于搭建好我的博客了。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ƽ���¼�����С����,�ȷ���һƪ���¼�¼һ�¡����ǲ�����,�������������������ˣ��ͱ��ĵط����ˡ����������ڴ���ˡ�&lt;/p&gt;
-&lt;/
+&lt;p&gt;平复下激动的小心情,先发表一篇文章记录一下。真是不容易,当初环境不是这里错了，就别的地方错了。如今是终于搭建好了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;hexo搭建完成后的感受:&lt;br&gt;  先写到这里。
     
     </summary>
     
