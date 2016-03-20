@@ -1,0 +1,517 @@
+
+ <!DOCTYPE HTML>
+<html lang="zn-ch">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>swift常量与变量 | HL&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="hailong.huang">
+    
+
+    
+    <meta name="description" content="常量&amp;amp;变量1234567// 定义变量： var i = 20 ；print(i)  // i = 20 i = 30 ；print(i)  // i = 30 // 定义常量let j = 20 // j = 30 常量声明完成后不可修改其值，这里如果写的话，编译器会直接报错print(j)
+
+
+变量顾名思义就是可以改变的量,所以定义的变量是可以修改的。swift 定义变量和常量 与 o">
+<meta property="og:type" content="article">
+<meta property="og:title" content="swift常量与变量">
+<meta property="og:url" content="http://yoursite.com/2016/03/20/swift - 常量与变量/index.html">
+<meta property="og:site_name" content="HL's Blog">
+<meta property="og:description" content="常量&amp;amp;变量1234567// 定义变量： var i = 20 ；print(i)  // i = 20 i = 30 ；print(i)  // i = 30 // 定义常量let j = 20 // j = 30 常量声明完成后不可修改其值，这里如果写的话，编译器会直接报错print(j)
+
+
+变量顾名思义就是可以改变的量,所以定义的变量是可以修改的。swift 定义变量和常量 与 o">
+<meta property="og:updated_time" content="2016-03-20T12:28:02.076Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="swift常量与变量">
+<meta name="twitter:description" content="常量&amp;amp;变量1234567// 定义变量： var i = 20 ；print(i)  // i = 20 i = 30 ；print(i)  // i = 30 // 定义常量let j = 20 // j = 30 常量声明完成后不可修改其值，这里如果写的话，编译器会直接报错print(j)
+
+
+变量顾名思义就是可以改变的量,所以定义的变量是可以修改的。swift 定义变量和常量 与 o">
+
+    
+    <link rel="alternative" href="/atom.xml" title="HL&#39;s Blog" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="HL&#39;s Blog" title="HL&#39;s Blog"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="HL&#39;s Blog">HL&#39;s Blog</a></h1>
+				<h2 class="blog-motto">Walk steps step by step</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/03/20/swift - 常量与变量/" title="swift常量与变量" itemprop="url">swift常量与变量</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="hailong.huang" target="_blank" itemprop="author">hailong.huang</a>
+		
+  <p class="article-time">
+    <time datetime="2016-03-20T12:26:16.000Z" itemprop="datePublished"> Published 2016-03-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#常量-amp-变量"><span class="toc-number">1.</span> <span class="toc-text">常量&变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#定义-OC-对象"><span class="toc-number">1.1.</span> <span class="toc-text">定义 OC 对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量类型"><span class="toc-number">1.2.</span> <span class="toc-text">变量类型</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="常量-amp-变量"><a href="#常量-amp-变量" class="headerlink" title="常量&amp;变量"></a>常量&amp;变量</h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义变量： </span></span><br><span class="line"><span class="keyword">var</span> i = <span class="number">20</span> ；<span class="built_in">print</span>(i)  <span class="comment">// i = 20</span></span><br><span class="line"> i = <span class="number">30</span> ；<span class="built_in">print</span>(i)  <span class="comment">// i = 30</span></span><br><span class="line"> <span class="comment">// 定义常量</span></span><br><span class="line"><span class="keyword">let</span> j = <span class="number">20</span> </span><br><span class="line"><span class="comment">// j = 30 常量声明完成后不可修改其值，这里如果写的话，编译器会直接报错</span></span><br><span class="line"><span class="built_in">print</span>(j)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ul>
+<li>变量顾名思义就是可以改变的量,所以定义的变量是可以修改的。<br>swift 定义变量和常量 与 oc不同  swift中 直接用<code>var</code>和 <code>let</code>声明，不用声明变量和常量的基本数据类型。因为swift是编译时语言，在编译时会根据你声明的变量推断出你的变量或常量的数据类型,这里有一个名词叫 <code>类型推断</code>, OC则是运行时语言,在运行时才会知道你声明的变量或常量的类型。</li>
+<li><code>var</code> 定义变量，设置之后可以修改</li>
+<li><code>let</code> 定义常量，设置之后不可以修改</li>
+<li>语句末尾不用使用 <code>;</code></li>
+<li>在 Swift 中使用 <code>print()</code> 替代 OC 中的 <code>NSLog</code>,相比于OC的’NSLog’,swift的<code>print()</code>性能会更好</li>
+</ul>
+</li>
+</ul>
+<h2 id="定义-OC-对象"><a href="#定义-OC-对象" class="headerlink" title="定义 OC 对象"></a>定义 <code>OC</code> 对象</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 实例化视图</span></span><br><span class="line"><span class="keyword">let</span> v = <span class="type">UIView</span>(frame: <span class="type">CGRectMake</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">100</span>, <span class="number">100</span>))</span><br><span class="line"><span class="comment">// 设置背景颜色</span></span><br><span class="line">v.backgroundColor = <span class="type">UIColor</span>.redColor()</span><br><span class="line"><span class="comment">// 添加到根视图</span></span><br><span class="line">view.addSubview(v)</span><br></pre></td></tr></table></figure>
+<pre><code>* 在 `Swift` 中要实例化一个对象可以使用 `类名()` 的格式，与 `OC` 中的 `alloc/init` 等价
+* `OC` 中的 `initWithXXX` 在 `Swift` 中通常可以使用 `类名(XXX: )` 找到对应的函数
+* `OC` 中的 `[UIColor redColor]` 类方法，在 `Swift` 中通常可以使用 `类名.XXX` 找到对应的函数
+* 使用 `let` 修饰 `v` 并且赋值，表示 `该常量的内存地址不允许修改，但是可以修改其内部的属性`
+* 当前对象的属性，不需要使用 `self.`
+</code></pre><blockquote>
+<p>常量&amp;变量的使用原则：尽量先用 let，只有需要变的时候，再用 var，能够更加安全</p>
+</blockquote>
+<h2 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">10</span></span><br><span class="line"><span class="keyword">let</span> y = <span class="number">10.5</span></span><br><span class="line"><span class="keyword">let</span> z: <span class="type">Double</span> = <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="type">Double</span>(x) + y)</span><br><span class="line"><span class="built_in">print</span>(x + <span class="type">Int</span>(y))</span><br><span class="line"><span class="built_in">print</span>(y + z)</span><br></pre></td></tr></table></figure>
+<pre><code>* 初次接触 `Swift` 中会因为简单的 `var` `let` 误以为 `Swift` 中的类型非常松散
+* 其实所有变量的准确类型都是在赋值的同时自动推导的
+* `Swift`  是对类型要求非常严格的一门语言，`一个值永远不会被自动转换成其他类型`
+* 如果要转换，必须显示转换，Swift 中
+    * 小数默认是 `Double` 类型
+    * 整数默认是 `Int` 类型
+* 如果要显式的指定变量的类型，可以在定义是使用 `var 变量名: 类型 = 值`
+</code></pre>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/swift基础/">swift基础</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/swift/">swift</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/03/20/swift - 常量与变量/" data-title="swift常量与变量 | HL&#39;s Blog" data-tsina="5239104077" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/03/20/swift - 常量与变量/" data-title="swift常量与变量" data-url="http://yoursite.com/2016/03/20/swift - 常量与变量/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#常量-amp-变量"><span class="toc-number">1.</span> <span class="toc-text">常量&变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#定义-OC-对象"><span class="toc-number">1.1.</span> <span class="toc-text">定义 OC 对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量类型"><span class="toc-number">1.2.</span> <span class="toc-text">变量类型</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="studyBully" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/swift基础/" title="swift基础">swift基础<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/swift/" title="swift">swift<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向iOS程序开发论坛">iOS移动开发论坛</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.devtang.com/" target="_blank" title="唐巧&#39;blog">唐巧&#39;blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=5239104077&verifier=48e1b5e3&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m huanghailong. <br/>
+			I&#39;m a iOS coder.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/5239104077" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/studyBully" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:ryonhhl@163.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="hailong.huang">hailong.huang</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"studybully"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?17e88e3a93890ce63695e395e5c08105## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258072099'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1258072099' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
