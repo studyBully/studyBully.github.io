@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-20T07:49:07.659Z</updated>
+  <updated>2016-03-20T12:28:02.076Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Swift - 变量和常量</title>
-    <link href="http://yoursite.com/2016/03/20/Swift-%E5%8F%98%E9%87%8F%E5%92%8C%E5%B8%B8%E9%87%8F/"/>
-    <id>http://yoursite.com/2016/03/20/Swift-变量和常量/</id>
-    <published>2016-03-20T07:48:57.000Z</published>
-    <updated>2016-03-20T07:49:07.659Z</updated>
+    <title>swift常量与变量</title>
+    <link href="http://yoursite.com/2016/03/20/swift%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F/"/>
+    <id>http://yoursite.com/2016/03/20/swift常量与变量/</id>
+    <published>2016-03-20T12:26:16.000Z</published>
+    <updated>2016-03-20T12:28:02.076Z</updated>
     
     <content type="html">&lt;h1 id=&quot;常量-amp-变量&quot;&gt;&lt;a href=&quot;#常量-amp-变量&quot; class=&quot;headerlink&quot; title=&quot;常量&amp;amp;变量&quot;&gt;&lt;/a&gt;常量&amp;amp;变量&lt;/h1&gt;&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// 定义变量： &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt; ；&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(i)  &lt;span class=&quot;comment&quot;&gt;// i = 20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; i = &lt;span class=&quot;number&quot;&gt;30&lt;/span&gt; ；&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(i)  &lt;span class=&quot;comment&quot;&gt;// i = 30&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;span class=&quot;comment&quot;&gt;// 定义常量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; j = &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// j = 30 常量声明完成后不可修改其值，这里如果写的话，编译器会直接报错&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(j)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
@@ -58,28 +58,10 @@
     
     </summary>
     
+      <category term="swift基础" scheme="http://yoursite.com/categories/swift%E5%9F%BA%E7%A1%80/"/>
     
-  </entry>
-  
-  <entry>
-    <title>我的第一篇博文</title>
-    <link href="http://yoursite.com/2016/03/20/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/"/>
-    <id>http://yoursite.com/2016/03/20/我的第一篇博文/</id>
-    <published>2016-03-20T07:12:56.000Z</published>
-    <updated>2016-03-20T07:19:41.813Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;题记&quot;&gt;&lt;a href=&quot;#题记&quot; class=&quot;headerlink&quot; title=&quot;题记&quot;&gt;&lt;/a&gt;题记&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;今天终于搭建好了我的hexo博客，用的hexo3.0版本，真是各种坑。  不过虽然经历了N多波折才算完成，但是走完了这个过程，感觉收货还是蛮大的。今天先记录一下。发表一篇文章试试&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;题记&quot;&gt;&lt;a href=&quot;#题记&quot; class=&quot;headerlink&quot; title=&quot;题记&quot;&gt;&lt;/a&gt;题记&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;今天终于搭建好了我的hexo博客，用的hexo3.0版本，真是各种坑。  不过虽然经历了N多波折才算完成，但是走完
-    
-    </summary>
-    
+      <category term="swift" scheme="http://yoursite.com/tags/swift/"/>
     
   </entry>
   
