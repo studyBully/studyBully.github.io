@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[swift常量与变量]]></title>
+      <url>http://yoursite.com/2016/03/20/swift%20-%20%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F/</url>
+      <content type="html"><![CDATA[<h1 id="常量-amp-变量"><a href="#常量-amp-变量" class="headerlink" title="常量&amp;变量"></a>常量&amp;变量</h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义变量： </span></span><br><span class="line"><span class="keyword">var</span> i = <span class="number">20</span> ；<span class="built_in">print</span>(i)  <span class="comment">// i = 20</span></span><br><span class="line"> i = <span class="number">30</span> ；<span class="built_in">print</span>(i)  <span class="comment">// i = 30</span></span><br><span class="line"> <span class="comment">// 定义常量</span></span><br><span class="line"><span class="keyword">let</span> j = <span class="number">20</span> </span><br><span class="line"><span class="comment">// j = 30 常量声明完成后不可修改其值，这里如果写的话，编译器会直接报错</span></span><br><span class="line"><span class="built_in">print</span>(j)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><ul>
+<li>变量顾名思义就是可以改变的量,所以定义的变量是可以修改的。<br>swift 定义变量和常量 与 oc不同  swift中 直接用<code>var</code>和 <code>let</code>声明，不用声明变量和常量的基本数据类型。因为swift是编译时语言，在编译时会根据你声明的变量推断出你的变量或常量的数据类型,这里有一个名词叫 <code>类型推断</code>, OC则是运行时语言,在运行时才会知道你声明的变量或常量的类型。</li>
+<li><code>var</code> 定义变量，设置之后可以修改</li>
+<li><code>let</code> 定义常量，设置之后不可以修改</li>
+<li>语句末尾不用使用 <code>;</code></li>
+<li>在 Swift 中使用 <code>print()</code> 替代 OC 中的 <code>NSLog</code>,相比于OC的’NSLog’,swift的<code>print()</code>性能会更好</li>
+</ul>
+</li>
+</ul>
+<h2 id="定义-OC-对象"><a href="#定义-OC-对象" class="headerlink" title="定义 OC 对象"></a>定义 <code>OC</code> 对象</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 实例化视图</span></span><br><span class="line"><span class="keyword">let</span> v = <span class="type">UIView</span>(frame: <span class="type">CGRectMake</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">100</span>, <span class="number">100</span>))</span><br><span class="line"><span class="comment">// 设置背景颜色</span></span><br><span class="line">v.backgroundColor = <span class="type">UIColor</span>.redColor()</span><br><span class="line"><span class="comment">// 添加到根视图</span></span><br><span class="line">view.addSubview(v)</span><br></pre></td></tr></table></figure>
+<pre><code>* 在 `Swift` 中要实例化一个对象可以使用 `类名()` 的格式，与 `OC` 中的 `alloc/init` 等价
+* `OC` 中的 `initWithXXX` 在 `Swift` 中通常可以使用 `类名(XXX: )` 找到对应的函数
+* `OC` 中的 `[UIColor redColor]` 类方法，在 `Swift` 中通常可以使用 `类名.XXX` 找到对应的函数
+* 使用 `let` 修饰 `v` 并且赋值，表示 `该常量的内存地址不允许修改，但是可以修改其内部的属性`
+* 当前对象的属性，不需要使用 `self.`
+</code></pre><blockquote>
+<p>常量&amp;变量的使用原则：尽量先用 let，只有需要变的时候，再用 var，能够更加安全</p>
+</blockquote>
+<h2 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x = <span class="number">10</span></span><br><span class="line"><span class="keyword">let</span> y = <span class="number">10.5</span></span><br><span class="line"><span class="keyword">let</span> z: <span class="type">Double</span> = <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="type">Double</span>(x) + y)</span><br><span class="line"><span class="built_in">print</span>(x + <span class="type">Int</span>(y))</span><br><span class="line"><span class="built_in">print</span>(y + z)</span><br></pre></td></tr></table></figure>
+<pre><code>* 初次接触 `Swift` 中会因为简单的 `var` `let` 误以为 `Swift` 中的类型非常松散
+* 其实所有变量的准确类型都是在赋值的同时自动推导的
+* `Swift`  是对类型要求非常严格的一门语言，`一个值永远不会被自动转换成其他类型`
+* 如果要转换，必须显示转换，Swift 中
+    * 小数默认是 `Double` 类型
+    * 整数默认是 `Int` 类型
+* 如果要显式的指定变量的类型，可以在定义是使用 `var 变量名: 类型 = 值`
+</code></pre>]]></content>
+    </entry>
+    
+  
+  
+</search>
