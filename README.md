@@ -1,1 +1,3 @@
-# this is my hexo blog page
+```
+this is my hexo blog page
+```
